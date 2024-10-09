@@ -1,26 +1,32 @@
 import { Injectable } from '@nestjs/common';
 import { CreateActivityDto } from './dto/create-activity.dto';
 import { UpdateActivityDto } from './dto/update-activity.dto';
+import { Activity } from './schema/activity.schema';
+import { Model } from 'mongoose';
+import { InjectModel } from '@nestjs/mongoose';
 
 @Injectable()
 export class ActivityService {
-  create(createActivityDto: CreateActivityDto) {
-    return 'This action adds a new activity';
-  }
+  constructor (@InjectModel(Activity.name) private usermodel:Model<Activity>){}
 
   findAll() {
-    return `This action returns all activity`;
+    return this.usermodel.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} activity`;
+  async findOne(id: string) {
+    return this.usermodel.findById(id);
   }
 
-  update(id: number, updateActivityDto: UpdateActivityDto) {
-    return `This action updates a #${id} activity`;
+  async create(createUser: CreateActivityDto) {
+    const newUser = new this.usermodel(createUser);
+    return newUser.save()
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} activity`;
+  async update(id: string, update: UpdateActivityDto) {
+    return this.usermodel.findByIdAndUpdate(id, update, {new:true});
+  }
+
+  remove(id: string) {
+    return this.usermodel.findByIdAndDelete(id);
   }
 }

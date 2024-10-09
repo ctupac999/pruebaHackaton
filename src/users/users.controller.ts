@@ -1,16 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param, Delete, NotFoundException, Put, HttpCode, ConflictException } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { Http } from '@mui/icons-material';
 
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
-
-  @Post()
-  create(@Body() createUserDto: CreateUserDto) {
-    return this.usersService.create(createUserDto);
-  }
 
   @Get()
   findAll() {
@@ -18,17 +14,38 @@ export class UsersController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.usersService.findOne(+id);
+  async findOne(@Param('id') id: string) {
+    const user = this.usersService.findOne(id);
+    if (!user) throw new NotFoundException ('User not found');
+    return user
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-    return this.usersService.update(+id, updateUserDto);
+  @Post()
+  async create(@Body() body: CreateUserDto) {
+    try {
+      return await this.usersService.create(body);
+    }
+    catch (error){
+      if (error.code == 11000) {
+        throw new ConflictException ('User already exist')
+      }
+      throw error
+    };
+  
+  }
+
+  @Put(':id')
+  async update(@Param('id') id: string, @Body() body: UpdateUserDto) {
+    const user = await this.usersService.update(id, body);
+    if (!user) throw new NotFoundException ('User not found');
+    return user;
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.usersService.remove(+id);
+  @HttpCode(204)
+  async remove(@Param('id') id: string) {
+    const user = await this.usersService.remove(id);
+    if (!user) throw new NotFoundException ('User not found');
+    return user;
   }
 }

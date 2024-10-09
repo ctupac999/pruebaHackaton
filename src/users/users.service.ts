@@ -1,14 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { User } from './schema/user.schema';
+import { Users } from './schema/users.schema';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { Model } from 'mongoose';
-import { Mode } from 'fs';
 
 @Injectable()
 export class UsersService {
-  constructor (@InjectModel(User.name) private usermodel:Model<User>){}
+  constructor (@InjectModel(Users.name) private usermodel:Model<Users>){}
 
   findAll() {
     return this.usermodel.find();
