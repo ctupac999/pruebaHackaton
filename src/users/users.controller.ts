@@ -2,7 +2,6 @@ import { Controller, Get, Post, Body, Param, Delete, NotFoundException, Put, Htt
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import { Http } from '@mui/icons-material';
 
 @Controller('users')
 export class UsersController {

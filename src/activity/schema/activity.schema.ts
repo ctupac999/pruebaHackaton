@@ -1,7 +1,8 @@
 import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-class UsersRegistered {
+@Schema({ timestamps: true })
+export class UsersRegistered {
   @Prop({ required: true })
   userName: string;
 
@@ -15,7 +16,7 @@ export class Activity extends Document {
   nameActivity: string;
 
   @Prop({ type: [UsersRegistered], required: false })
-  usersRegistred: UsersRegistered[];
+  usersRegistered: UsersRegistered[];
 }
 
-export const ActivitySchema = Schema
+export const ActivitySchema = SchemaFactory.createForClass(Activity);
