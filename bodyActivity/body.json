@@ -1,5 +1,5 @@
 {
-    "name": "Actividad de Prueba",
+    "nameActivity": "Actividad de Prueba",
     "description": "Descripción de la actividad",
     "maxCapacity": 10,
     "usersRegistered": [
