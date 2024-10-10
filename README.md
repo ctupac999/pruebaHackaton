@@ -1,34 +1,32 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="http://nestjs.com/" target="blank">
+    <img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" />
+  </a>
 </p>
+
+# API de Actividades
 
 ## Descripción
 
-Este repositorio es una API (desarrollada en inglés)  para realizar peticiones de interacción entre usuarios y actividades conectado a una base datos de formato .json, alojada en un cluster de MongoDBAtlas y contiene:
-Una carpeta SRC donde se encuentra el código almacenado tomando en cuenta el patrón vista controlador.
-Una carpeta uploads para colocar el archivo .json para importar las actividades en la base de datos
-Una carpeta exports donde se van a guardar las actividades de la base de datos en formato .json
-Un archivo .env donde tienes que copiar las credenciales para la conexión con la base de datos en la nube de mongoDBAtlas
-Dos archivos (bodyUsers y bodyActivity) donde encontraras un body en formato .json como ejemplo para realizar las peticiones correspondientes
-Otros archivos para el correcto funcionamiento de la API
+Este repositorio es una API desarrollada en NestJS para realizar peticiones de interacción entre usuarios y actividades, conectada a una base de datos en formato JSON alojada en un cluster de MongoDB Atlas. Contiene:
 
+- **`src`**: Carpeta donde se encuentra el código, siguiendo el patrón vista-controlador.
+- **`uploads`**: Carpeta para colocar el archivo JSON para importar las actividades en la base de datos.
+- **`exports`**: Carpeta donde se guardan las actividades de la base de datos en formato JSON.
+- **`.env`**: Archivo donde debes copiar las credenciales para la conexión con la base de datos en la nube de MongoDB Atlas.
+- **`bodyUsers`** y **`bodyActivity`**: Archivos que contienen ejemplos de body en formato JSON para realizar las peticiones correspondientes.
+- Otros archivos necesarios para el correcto funcionamiento de la API.
 
 ## Instalación
-Bash:
 
-$ git clone https://github.com/ctupac999/pruebaHackaton 
-(o en su defecto) 
-$ git clone https://github.com/ctupac999/pruebaHackaton.git 
+Ejecuta los siguientes comandos en tu terminal:
+
+```bash
+$ git clone https://github.com/ctupac999/pruebaHackaton
+# o en su defecto
+$ git clone https://github.com/ctupac999/pruebaHackaton.git
 $ pnpm install
 
-## Running the app
-Para utlizar la Api es recomendable utilizar una interfaz para realizar las peticiones como [Postman](https://www.postman.com/)
-Recuerda que el archivo .env donde tienes que copiar las credenciales para la conexión con la base de datos en la nube de mongoDBAtlas.
-Si no encuentras un archivo.env crea uno en la raiz del proyecto y copia las credenciales ajuntadas con este repositorio.
-
-Bash:
-
-$ pnpm start
 
 ## EndPoints Actividades
 
