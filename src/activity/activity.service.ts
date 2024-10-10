@@ -7,26 +7,26 @@ import { InjectModel } from '@nestjs/mongoose';
 
 @Injectable()
 export class ActivityService {
-  constructor (@InjectModel(Activity.name) private usermodel:Model<Activity>){}
+  constructor (@InjectModel(Activity.name) private activityModel:Model<Activity>){}
 
   findAll() {
-    return this.usermodel.find();
+    return this.activityModel.find();
   }
 
   async findOne(id: string) {
-    return this.usermodel.findById(id);
+    return this.activityModel.findById(id);
   }
 
   async create(createUser: CreateActivityDto) {
-    const newUser = new this.usermodel(createUser);
+    const newUser = new this.activityModel(createUser);
     return newUser.save()
   }
 
   async update(id: string, update: UpdateActivityDto) {
-    return this.usermodel.findByIdAndUpdate(id, update, {new:true});
+    return this.activityModel.findByIdAndUpdate(id, update, {new:true});
   }
 
   remove(id: string) {
-    return this.usermodel.findByIdAndDelete(id);
+    return this.activityModel.findByIdAndDelete(id);
   }
 }

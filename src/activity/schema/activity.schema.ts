@@ -13,7 +13,13 @@ export class UsersRegistered {
 @Schema({ timestamps: true })
 export class Activity extends Document {
   @Prop({ unique: true, required: true })
-  nameActivity: string;
+  name: string;
+
+  @Prop({required: true })
+  description: string;
+
+  @Prop({required: true })
+  maxCapacity: number;
 
   @Prop({ type: [UsersRegistered], required: false })
   usersRegistered: UsersRegistered[];
