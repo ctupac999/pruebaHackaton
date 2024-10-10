@@ -8,7 +8,7 @@
 
 ## Descripción
 
-Este repositorio es una API desarrollada en NestJS para realizar peticiones de interacción entre usuarios y actividades, conectada a una base de datos en formato JSON alojada en un cluster de MongoDB Atlas. Contiene:
+Este repositorio es una API desarrollada en NestJS para realizar peticiones a una base de datos (para interactuar entre usuarios y actividades) en formato JSON alojada en un cluster de MongoDB Atlas. Este repositorio contiene:
 
 - **`src`**: Carpeta donde se encuentra el código, siguiendo el patrón vista-controlador.
 - **`uploads`**: Carpeta para colocar el archivo JSON para importar las actividades en la base de datos.
@@ -26,6 +26,9 @@ $ git clone https://github.com/ctupac999/pruebaHackaton
 # o en su defecto
 $ git clone https://github.com/ctupac999/pruebaHackaton.git
 $ pnpm install
+# o en su defecto
+$ npm install
+
 
 
 ## EndPoints Actividades
