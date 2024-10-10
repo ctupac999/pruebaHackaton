@@ -19,10 +19,11 @@ export class ActivityController {
 
   @Get(':id')
   async findOne(@Param('id') id: string) {
-    const user = this.activityService.findOne(id);
-    if (!user) throw new NotFoundException ('Activity not found');
-    return user
+    const activity = await this.activityService.findOne(id); 
+    if (!activity) throw new NotFoundException('Activity not found');
+    return activity;
   }
+  
 
   @Post()
   async create(@Body() body: CreateActivityDto) {
@@ -40,17 +41,17 @@ export class ActivityController {
 
   @Put(':id')
   async update(@Param('id') id: string, @Body() body: UpdateActivityDto) {
-    const user = await this.activityService.update(id, body);
-    if (!user) throw new NotFoundException ('Activity not found');
-    return user;
+    const activity = await this.activityService.update(id, body);
+    if (!activity) throw new NotFoundException ('Activity not found');
+    return activity;
   }
 
   @Delete(':id')
   @HttpCode(204)
   async remove(@Param('id') id: string) {
-    const user = await this.activityService.remove(id);
-    if (!user) throw new NotFoundException ('Activity not found');
-    return user;
+    const activity = await this.activityService.remove(id);
+    if (!activity) throw new NotFoundException ('Activity not found');
+    return activity;
   }
 
   @Get('/export/json')

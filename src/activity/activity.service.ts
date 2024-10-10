@@ -17,9 +17,9 @@ export class ActivityService {
     return this.activityModel.findById(id);
   }
 
-  async create(createUser: CreateActivityDto) {
-    const newUser = new this.activityModel(createUser);
-    return newUser.save()
+  async create(createActivity: CreateActivityDto) {
+    const newActivity = new this.activityModel(createActivity);
+    return newActivity.save()
   }
 
   async update(id: string, update: UpdateActivityDto) {

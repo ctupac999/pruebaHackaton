@@ -1,0 +1,7 @@
+{
+    "name": "string",
+    "description": "string",
+    "maxCapacity": 0,
+    "usersRegistered": {"userName":"string",
+                        "status":"string"}
+}
