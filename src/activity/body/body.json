@@ -1,7 +1,12 @@
 {
-    "name": "string",
-    "description": "string",
-    "maxCapacity": 0,
-    "usersRegistered": {"userName":"string",
-                        "status":"string"}
-}
+    "name": "Actividad de Prueba",
+    "description": "Descripción de la actividad",
+    "maxCapacity": 10,
+    "usersRegistered": [
+      {
+        "userName": "usuario1",
+        "status": "registrado"
+      }
+    ]
+  }
+  

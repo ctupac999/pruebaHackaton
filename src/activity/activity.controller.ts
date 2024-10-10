@@ -6,6 +6,7 @@ import { Response } from 'express';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 import * as fs from 'fs';
+import * as path from 'path';
 
 
 @Controller('activity')
@@ -55,12 +56,28 @@ export class ActivityController {
   }
 
   @Get('/export/json')
-  async export(@Res() res: Response) {
-    const activities = await this.activityService.findAll();
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader('Content-Disposition', 'attachment; filename=activities.json');
-    res.json(activities); 
-  }
+async export(@Res() res: Response) {
+    try {
+        const activities = await this.activityService.findAll();
+        console.log(activities);
+
+        if (!activities || activities.length === 0) {
+            return res.status(204).send(); 
+        }
+
+        const filePath = path.join(__dirname, '../../exports/activities.json');
+
+        fs.writeFileSync(filePath, JSON.stringify(activities, null, 2));
+
+        res.setHeader('Content-Type', 'application/json');
+        res.setHeader('Content-Disposition', 'attachment; filename=activities.json');
+        return res.json(activities); 
+    } catch (error) {
+        console.error('Error al exportar actividades:', error);
+        return res.status(500).send('Error al exportar actividades');
+    }
+}
+
 
 
   @Post('/import/json')

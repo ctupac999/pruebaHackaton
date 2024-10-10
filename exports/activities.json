@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "6707ee54f4889f5ba661f8f2",
+    "nameActivity": "Actividad de Prueba4",
+    "description": "Descripción de la actividad2",
+    "maxCapacity": 2,
+    "createdAt": "2024-10-10T15:10:12.951Z",
+    "updatedAt": "2024-10-10T15:10:12.951Z",
+    "__v": 0,
+    "usersRegistered": []
+  },
+  {
+    "_id": "6707ee63f4889f5ba661f8f4",
+    "nameActivity": "Actividad de Prueba5",
+    "description": "Descripción de la actividad2",
+    "maxCapacity": 2,
+    "createdAt": "2024-10-10T15:10:27.525Z",
+    "updatedAt": "2024-10-10T15:10:27.525Z",
+    "__v": 0,
+    "usersRegistered": []
+  },
+  {
+    "_id": "6707eedde025f40eb87478c5",
+    "nameActivity": "Actividad de Prueba5",
+    "description": "Descripción de la actividad2",
+    "maxCapacity": 2,
+    "usersRegistered": [],
+    "createdAt": "2024-10-10T15:12:29.479Z",
+    "updatedAt": "2024-10-10T15:12:29.479Z",
+    "__v": 0
+  },
+  {
+    "_id": "6707eee1e025f40eb87478c7",
+    "nameActivity": "Actividad de Prueba5",
+    "description": "Descripción de la actividad2",
+    "maxCapacity": 2,
+    "usersRegistered": [],
+    "createdAt": "2024-10-10T15:12:33.883Z",
+    "updatedAt": "2024-10-10T15:12:33.883Z",
+    "__v": 0
+  },
+  {
+    "_id": "6707ef182cdf4e02f8e8ac28",
+    "nameActivity": "Actividad de Prueba5",
+    "description": "Descripción de la actividad2",
+    "maxCapacity": 2,
+    "usersRegistered": [],
+    "createdAt": "2024-10-10T15:13:28.810Z",
+    "updatedAt": "2024-10-10T15:13:28.810Z",
+    "__v": 0
+  },
+  {
+    "_id": "6707ef1c2cdf4e02f8e8ac2a",
+    "nameActivity": "Actividad de Prueba5",
+    "description": "Descripción de la actividad2",
+    "maxCapacity": 2,
+    "usersRegistered": [],
+    "createdAt": "2024-10-10T15:13:32.415Z",
+    "updatedAt": "2024-10-10T15:13:32.415Z",
+    "__v": 0
+  },
+  {
+    "_id": "6707ef3f2cdf4e02f8e8ac2c",
+    "nameActivity": "Actividad de Prueba5",
+    "description": "Descripción de la actividad2",
+    "maxCapacity": 2,
+    "usersRegistered": [],
+    "createdAt": "2024-10-10T15:14:07.759Z",
+    "updatedAt": "2024-10-10T15:14:07.759Z",
+    "__v": 0
+  }
+]

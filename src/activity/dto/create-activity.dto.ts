@@ -11,8 +11,8 @@ export class CreateActivityDto {
     @IsNumber()
     maxCapacity ?: number;
 
-    // @IsOptional()
-    // usersRegistered ?: {
-    //     userName?:string;
-    //     status?:string};
+    @IsOptional()
+    usersRegistered ?: {
+        userName?:string;
+        status?:string};
 }
