@@ -27,7 +27,9 @@ $ git clone https://github.com/ctupac999/pruebaHackaton.git
 $ pnpm install
 # o en su defecto
 $ npm install
-**`.env`**: Archivo donde debes crear en la raiz del repositorio clonado donde contiene las credenciales para la conexión con la base de datos en la nube de MongoDB Atlas, estas credenciales se enviaron adjuntas con el repositorio.
+# `.env`: Archivo que debes crear en la raiz del repositorio clonado 
+#contiene las credenciales para la conexión con la base de datos en la nube de MongoDB Atlas
+# estas credenciales se enviaron adjuntas con el repositorio.
 
 
 
