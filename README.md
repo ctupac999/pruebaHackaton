@@ -13,7 +13,6 @@ Este repositorio es una API desarrollada en NestJS para realizar peticiones a un
 - **`src`**: Carpeta donde se encuentra el código, siguiendo el patrón vista-controlador.
 - **`uploads`**: Carpeta para colocar el archivo JSON para importar las actividades en la base de datos.
 - **`exports`**: Carpeta donde se guardan las actividades de la base de datos en formato JSON.
-- **`.env`**: Archivo donde debes copiar las credenciales para la conexión con la base de datos en la nube de MongoDB Atlas.
 - **`bodyUsers`** y **`bodyActivity`**: Archivos que contienen ejemplos de body en formato JSON para realizar las peticiones correspondientes.
 - Otros archivos necesarios para el correcto funcionamiento de la API.
 
@@ -28,6 +27,7 @@ $ git clone https://github.com/ctupac999/pruebaHackaton.git
 $ pnpm install
 # o en su defecto
 $ npm install
+**`.env`**: Archivo donde debes crear en la raiz del repositorio clonado donde contiene las credenciales para la conexión con la base de datos en la nube de MongoDB Atlas, estas credenciales se enviaron adjuntas con el repositorio.
 
 
 
