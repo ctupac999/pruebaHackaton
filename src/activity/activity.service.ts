@@ -13,8 +13,8 @@ export class ActivityService {
     return this.activityModel.find();
   }
 
-  async findOne(id: string) {
-    return this.activityModel.findById(id);
+  async findOneUser(id: string): Promise<Activity> {
+    return this.activityModel.findById(id).exec();
   }
 
   async create(createActivity: CreateActivityDto) {
@@ -22,11 +22,15 @@ export class ActivityService {
     return newActivity.save()
   }
 
-  async update(id: string, update: UpdateActivityDto) {
-    return this.activityModel.findByIdAndUpdate(id, update, {new:true});
+  async update(id: string, updateActivityDto: UpdateActivityDto): Promise<Activity> {
+    return this.activityModel.findByIdAndUpdate(id, updateActivityDto, { new: true }).exec();
   }
 
   remove(id: string) {
     return this.activityModel.findByIdAndDelete(id);
   }
+
+  async removeAll(): Promise<{}> {
+    return this.activityModel.deleteMany({});
+}
 }

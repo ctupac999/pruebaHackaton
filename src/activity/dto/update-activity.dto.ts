@@ -1,4 +1,8 @@
-import { PartialType } from '@nestjs/mapped-types';
-import { CreateActivityDto } from './create-activity.dto';
+import { IsArray, IsOptional } from 'class-validator';
+import { RegisterUserDto } from '../dto/register-user.dto'; // Ajusta la ruta según tu estructura de carpetas
 
-export class UpdateActivityDto extends PartialType(CreateActivityDto) {}
+export class UpdateActivityDto {
+    @IsOptional()
+    @IsArray()
+    usersRegistered?: RegisterUserDto[];
+}

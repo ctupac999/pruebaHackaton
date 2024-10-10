@@ -1,72 +1,168 @@
 [
   {
-    "_id": "6707ee54f4889f5ba661f8f2",
-    "nameActivity": "Actividad de Prueba4",
-    "description": "Descripción de la actividad2",
-    "maxCapacity": 2,
-    "createdAt": "2024-10-10T15:10:12.951Z",
-    "updatedAt": "2024-10-10T15:10:12.951Z",
-    "__v": 0,
-    "usersRegistered": []
+    "nameActivity": "Fútbol 5",
+    "description": "Partido de fútbol reducido entre amigos en cancha de césped sintético.",
+    "maxCapacity": 10,
+    "usersRegistered": [
+      {
+        "userName": "juanPerez",
+        "status": "registrado"
+      },
+      {
+        "userName": "luisGarcia",
+        "status": "registrado"
+      }
+    ]
   },
   {
-    "_id": "6707ee63f4889f5ba661f8f4",
-    "nameActivity": "Actividad de Prueba5",
-    "description": "Descripción de la actividad2",
-    "maxCapacity": 2,
-    "createdAt": "2024-10-10T15:10:27.525Z",
-    "updatedAt": "2024-10-10T15:10:27.525Z",
-    "__v": 0,
-    "usersRegistered": []
+    "nameActivity": "Yoga al Aire Libre",
+    "description": "Sesión de yoga para relajarse y estirar el cuerpo en el parque.",
+    "maxCapacity": 15,
+    "usersRegistered": [
+      {
+        "userName": "mariaLopez",
+        "status": "registrado"
+      },
+      {
+        "userName": "anaGomez",
+        "status": "registrado"
+      },
+      {
+        "userName": "carlaFernandez",
+        "status": "registrado"
+      }
+    ]
   },
   {
-    "_id": "6707eedde025f40eb87478c5",
-    "nameActivity": "Actividad de Prueba5",
-    "description": "Descripción de la actividad2",
-    "maxCapacity": 2,
-    "usersRegistered": [],
-    "createdAt": "2024-10-10T15:12:29.479Z",
-    "updatedAt": "2024-10-10T15:12:29.479Z",
-    "__v": 0
+    "nameActivity": "Basketball 3x3",
+    "description": "Partido rápido de basketball entre tres equipos.",
+    "maxCapacity": 6,
+    "usersRegistered": [
+      {
+        "userName": "pedroSanchez",
+        "status": "registrado"
+      },
+      {
+        "userName": "raulMartinez",
+        "status": "registrado"
+      }
+    ]
   },
   {
-    "_id": "6707eee1e025f40eb87478c7",
-    "nameActivity": "Actividad de Prueba5",
-    "description": "Descripción de la actividad2",
-    "maxCapacity": 2,
-    "usersRegistered": [],
-    "createdAt": "2024-10-10T15:12:33.883Z",
-    "updatedAt": "2024-10-10T15:12:33.883Z",
-    "__v": 0
+    "nameActivity": "Crossfit Bootcamp",
+    "description": "Entrenamiento intensivo de Crossfit para mejorar la resistencia y fuerza.",
+    "maxCapacity": 20,
+    "usersRegistered": [
+      {
+        "userName": "carlosHernandez",
+        "status": "registrado"
+      },
+      {
+        "userName": "sofiaTorres",
+        "status": "registrado"
+      },
+      {
+        "userName": "nicolasDiaz",
+        "status": "registrado"
+      },
+      {
+        "userName": "martinVega",
+        "status": "registrado"
+      }
+    ]
   },
   {
-    "_id": "6707ef182cdf4e02f8e8ac28",
-    "nameActivity": "Actividad de Prueba5",
-    "description": "Descripción de la actividad2",
-    "maxCapacity": 2,
-    "usersRegistered": [],
-    "createdAt": "2024-10-10T15:13:28.810Z",
-    "updatedAt": "2024-10-10T15:13:28.810Z",
-    "__v": 0
+    "nameActivity": "Ciclismo de Montaña",
+    "description": "Excursión en bicicleta por rutas de montaña.",
+    "maxCapacity": 12,
+    "usersRegistered": [
+      {
+        "userName": "diegoCastro",
+        "status": "registrado"
+      },
+      {
+        "userName": "lauraMendoza",
+        "status": "registrado"
+      },
+      {
+        "userName": "andresPardo",
+        "status": "registrado"
+      }
+    ]
   },
   {
-    "_id": "6707ef1c2cdf4e02f8e8ac2a",
-    "nameActivity": "Actividad de Prueba5",
-    "description": "Descripción de la actividad2",
-    "maxCapacity": 2,
-    "usersRegistered": [],
-    "createdAt": "2024-10-10T15:13:32.415Z",
-    "updatedAt": "2024-10-10T15:13:32.415Z",
-    "__v": 0
+    "nameActivity": "Voleibol de Playa",
+    "description": "Partido amistoso de voleibol en la playa.",
+    "maxCapacity": 8,
+    "usersRegistered": [
+      {
+        "userName": "martaRodriguez",
+        "status": "registrado"
+      },
+      {
+        "userName": "ricardoAlvarez",
+        "status": "registrado"
+      }
+    ]
   },
   {
-    "_id": "6707ef3f2cdf4e02f8e8ac2c",
-    "nameActivity": "Actividad de Prueba5",
-    "description": "Descripción de la actividad2",
-    "maxCapacity": 2,
-    "usersRegistered": [],
-    "createdAt": "2024-10-10T15:14:07.759Z",
-    "updatedAt": "2024-10-10T15:14:07.759Z",
-    "__v": 0
+    "nameActivity": "Clases de Natación",
+    "description": "Clases de natación para mejorar la técnica en piscina.",
+    "maxCapacity": 10,
+    "usersRegistered": [
+      {
+        "userName": "javierNavarro",
+        "status": "registrado"
+      }
+    ]
+  },
+  {
+    "nameActivity": "Maratón 5K",
+    "description": "Carrera de 5 kilómetros para todos los niveles.",
+    "maxCapacity": 50,
+    "usersRegistered": [
+      {
+        "userName": "danielaRomero",
+        "status": "registrado"
+      },
+      {
+        "userName": "sergioRuiz",
+        "status": "registrado"
+      },
+      {
+        "userName": "lauraGonzalez",
+        "status": "registrado"
+      }
+    ]
+  },
+  {
+    "nameActivity": "Clases de Boxeo",
+    "description": "Clases de boxeo para principiantes y avanzados.",
+    "maxCapacity": 16,
+    "usersRegistered": [
+      {
+        "userName": "pabloCruz",
+        "status": "registrado"
+      },
+      {
+        "userName": "alejandroMoreno",
+        "status": "registrado"
+      }
+    ]
+  },
+  {
+    "nameActivity": "Escalada en Roca",
+    "description": "Jornada de escalada en una pared natural.",
+    "maxCapacity": 8,
+    "usersRegistered": [
+      {
+        "userName": "sandraReyes",
+        "status": "registrado"
+      },
+      {
+        "userName": "victorVargas",
+        "status": "registrado"
+      }
+    ]
   }
 ]

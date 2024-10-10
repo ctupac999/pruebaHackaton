@@ -28,7 +28,7 @@ $ pnpm install
 # o en su defecto
 $ npm install
 # `.env`: Archivo que debes crear en la raiz del repositorio clonado 
-#contiene las credenciales para la conexión con la base de datos en la nube de MongoDB Atlas
+# contiene las credenciales para la conexión con la base de datos en la nube de MongoDB Atlas
 # estas credenciales se enviaron adjuntas con el repositorio.
 
 
@@ -82,16 +82,12 @@ body de ejemplo:
 
 Registro de un usuario en una actividad:
 PUT(:id)
-localhost:3000/appactivitats/activity/id
+localhost:3000/appactivitats/activity/id/register
 body de ejemplo:
 {
-    "usersRegistered": [
-      {
-        "userName": "josesito",
-        "status": "aceptado"
-      }
-    ]
-  }
+  "userName": "string",
+  "status": "string"
+}
 
 Importación de actividades en formato .json
 @Post('/import/json')
