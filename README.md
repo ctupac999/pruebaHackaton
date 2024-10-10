@@ -4,49 +4,46 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Este repositorio contiene:
+Una carpeta SRC donde se encuentra el código almacenado tomando en cuenta el patrón vista controlador.
+Una carpeta uploads para colocar el archivo .json para importar las actividades en la base de datos
+Una carpeta exports donde se van a guardar las actividades de la base de datos en formato .json
+Un archivo .env donde tienes que copiar las credenciales para la conexión con la base de datos en la nube de mongoDBAtlas
+Otros archivos para el correcto funcionamiento de la API
+
 
 ## Installation
+Bash:
 
-```bash
+$ git clone https://github.com/ctupac999/pruebaHackaton 
+(o en su defecto) 
+$ git clone https://github.com/ctupac999/pruebaHackaton.git 
 $ pnpm install
-```
 
 ## Running the app
+para utlizar la Api es recomendable utilizar una interfaz para realizar las peticiones como [Postman](https://www.postman.com/)
 
-```bash
-# development
-$ pnpm run start
+Bash:
 
-# watch mode
-$ pnpm run start:dev
+$ pnpm start
 
-# production mode
-$ pnpm run start:prod
-```
+## EndPoints
 
-## Test
+Creación de Actividades:
+POST
+localhost:3000/appactivitats/activity
 
-```bash
-# unit tests
-$ pnpm run test
+Visualización de todas las actividades:
+GET
+localhost:3000/appactivitats/activity
 
-# e2e tests
-$ pnpm run test:e2e
+Visualizacion
 
-# test coverage
-$ pnpm run test:cov
-```
 
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
